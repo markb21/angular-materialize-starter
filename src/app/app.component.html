@@ -6,8 +6,8 @@
     data-activates="nav-mobile" class="button-collapse hide-on-large-only">
       <i class="material-icons grey-text">menu</i>
     </a>
-
     <ul class="right hide-on-med-and-down">
+      <li class="black-text"><a class="black-text" (click)="toast()">Toast me</a></li>
       <li *ngFor="let menuItem of menuItems" routerLinkActive="active"><a class="black-text" [routerLink]="menuItem.route">{{ menuItem.name | uppercase }}</a></li>
     </ul>
 

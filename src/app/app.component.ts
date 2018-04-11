@@ -24,6 +24,10 @@ export class AppComponent {
     this.sidenavActions.emit({ action: 'sideNav', params: ['hide'] });
   }
 
+  toast() {
+    Materialize.toast('I am a funny toast! ', 4500);
+  }
+
   sidenavActions: EventEmitter<any>;
   sidenavParams: any[];
 }
